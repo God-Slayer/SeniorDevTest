@@ -1,0 +1,74 @@
+<div class="shopping-container">
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr *ngFor="let item of shoppingList">
+      <td>
+        <input
+          #itemName
+          type="text"
+          class="item-name"
+          value="{{ item.item }}"
+          placeholder="item name"
+        />
+      </td>
+      <td>
+        <input
+          #itemQty
+          type="number"
+          class="item-qty"
+          value="{{ item.quantity }}"
+          placeholder="item quantity"
+        />
+      </td>
+      <td>
+        <i
+          class="fas fa-check-circle"
+          title="Save Changes"
+          (click)="Modify(itemName.value, itemQty.value, 'update', item.index)"
+        ></i>
+      </td>
+      <td>
+        <i
+          class="fas fa-times-circle"
+          title="Remove Item"
+          (click)="Modify(itemName.value, itemQty.value, 'delete', item.index)"
+        ></i>
+      </td>
+    </tr>
+    <tr class="tr-add">
+      <td>
+        <input
+          #addItemName
+          type="text"
+          class="item-name"
+          placeholder="Add a new item"
+        />
+      </td>
+      <td>
+        <input
+          #addItemQty
+          type="number"
+          class="item-qty"
+          value="0"
+          min="0"
+          placeholder="Item Quantity"
+        />
+      </td>
+      <td colspan="2" class="add-btn">
+        <i
+          class="fas fa-plus-circle"
+          title="Add Item"
+          (click)="
+            Modify(addItemName.value, addItemQty.value, 'add');
+            addItemName.value = '';
+            addItemQty.value = '0'
+          "
+        ></i>
+      </td>
+    </tr>
+  </table>
+</div>

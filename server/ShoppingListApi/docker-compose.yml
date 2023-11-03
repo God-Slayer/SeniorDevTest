@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  shoppinglistapi:
+    image: ${DOCKER_REGISTRY-}shoppinglistapi
+    build:
+      context: .
+      dockerfile: ShoppingListApi/Dockerfile

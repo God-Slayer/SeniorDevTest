@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingListApi", "ShoppingListApi\ShoppingListApi.csproj", "{B09EC1B2-3C7C-4B67-87BA-C5E20486708C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{66E2F266-8BDB-4294-A389-7A522A86EF7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09EC1B2-3C7C-4B67-87BA-C5E20486708C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09EC1B2-3C7C-4B67-87BA-C5E20486708C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09EC1B2-3C7C-4B67-87BA-C5E20486708C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09EC1B2-3C7C-4B67-87BA-C5E20486708C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E2F266-8BDB-4294-A389-7A522A86EF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E2F266-8BDB-4294-A389-7A522A86EF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E2F266-8BDB-4294-A389-7A522A86EF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E2F266-8BDB-4294-A389-7A522A86EF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13CC014F-709C-43B2-9BCE-9AD07342C307}
+	EndGlobalSection
+EndGlobal
